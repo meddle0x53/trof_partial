@@ -49,7 +49,7 @@
 ### In the past...
 * But why? |
 * This was 2004-2005? What was the state of the programming world then? |
-* Actually even before that, in the 90s, the trends were simple and quite different |
+* Actually even before that time, in the 90s, the trends were simple and quite different |
 
 #HSLIDE
 ### In the past...
@@ -78,7 +78,7 @@
 #HSLIDE
 ### Nobody uses it!
 * They had bad tooling. Everything had bad tooling at the time, but niche and academic languages were the worst...
-* Lack of training. Universities don't train you to be lazy! |
+* Lack of training. Universities were not training you to be lazy! |
 * No popularity - C++/Java/VB, they were all popular for the different companies, not Haskell! |
 
 #HSLIDE
@@ -225,19 +225,24 @@ let Y = (h) => {
 * How? With map/reduce/filter, of course! |
 
 #HSLIDE
-```javascript
-ProAct.registry.make('s:plus');
-ProAct.registry.make('s:minus', 'map(-)');
-ProAct.registry.make('s:main', '<<(s:plus, s:minus)|acc(+)|@($1)', (v) => {
-    var counterEl = document.getElementsByClassName('counter')[0];
-    counterEl.innerHTML = v;
-});
-```
 
 ```html
 <div class='counter'>0</div>
 <button onclick='P.registry.s("plus").trigger(1)'>+</button>
 <button onclick='P.registry.s("minus").trigger(1)'>-</button>
+```
+
+```javascript
+ProAct.registry.make('s:plus')
+ProAct.registry.make('s:minus', 'map(-)')
+ProAct.registry.make(
+  's:main',
+  '<<(s:plus, s:minus)|acc(+)|@($1)',
+  (v) => {
+    let counterEl = document.getElementsByClassName('counter')[0]
+    counterEl.innerHTML = v
+  }
+)
 ```
 
 #HSLIDE
@@ -248,7 +253,8 @@ input.map(new Func1<String, Matcher>() {
 			}
 		}).filter(new Func1<Matcher, Boolean>() {
 			public Boolean call(Matcher matcher) {
-				return matcher.matches() && matcher.group(1) != null;
+				return matcher.matches() &&
+          matcher.group(1) != null;
 			}
 		}).map(new Func1<Matcher, String>() {
 			public String call(Matcher matcher) {
@@ -260,9 +266,9 @@ input.map(new Func1<String, Matcher>() {
 #HSLIDE
 ```java
 input
-  .map(pattern::matcher)
-  .filter(matcher -> matcher.matches() && matcher.group(1) != null)
-  .map(matcher -> matcher.group(1))
+.map(pattern::matcher)
+.filter(matcher -> matcher.matches() && matcher.group(1) != null)
+.map(matcher -> matcher.group(1))
 ```
 
 #HSLIDE
@@ -298,8 +304,9 @@ Joe Armstong:
 
 ```
 I'm an ex physicist.
-In classical physics and ignoring quantum effects two objects in the real world
-cannot exist in the same place at the same time.
+In classical physics and ignoring quantum effects,
+two objects in the real world cannot exist
+in the same place at the same time.
 ```
 
 #HSLIDE
@@ -425,11 +432,15 @@ class Monad m where
 ### Try new things
 * If we all are the same, if we all are equal, if we all are static, we won't move forward |
 * Now, the functions are on the rise, but not only! |
-* So why not read about or try new things?
+* So why not read about or try new things? |
 
 #HSLIDE
 ### Try new things!
 ![Image-Absolute](assets/new_things.jpg)
+
+#HSLIDE
+### Evolve
+![Image-Absolute](assets/ouroboros-by-zarathus.jpg)
 
 #HSLIDE
 ## The End
