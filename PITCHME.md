@@ -103,7 +103,7 @@
 
 * But nothing is perfect... |
 * And our minds don't work the same... |
-* And there is not silver bullet... |
+* And there is no silver bullet... |
 * For some jobs you can have many alternative tools, for some not... |
 
 #HSLIDE
@@ -140,7 +140,7 @@
 
 #HSLIDE
 ### JavaScript
-* A Java-like syntax was required, and familiar semantics for many common idioms was also adopted.
+* A Java-like syntax was required, and familiar semantics for many common idioms were also adopted.
 * So Mocha looked like Java, but underneath was some crossbreed between Scheme and Self |
 * It had functions as first class citizens! |
 * Events and callbacks! |
@@ -333,7 +333,6 @@ in the same place at the same time.
 ![Image-Absolute](assets/let_it_crash.jpg)
 
 #HSLIDE
-#### Сума
 ## Tools And Platforms
 ### Reliable compilers, types and simplicity
 
@@ -437,10 +436,6 @@ class Monad m where
 #HSLIDE
 ### Try new things!
 ![Image-Absolute](assets/new_things.jpg)
-
-#HSLIDE
-### Evolve
-![Image-Absolute](assets/ouroboros-by-zarathus.jpg)
 
 #HSLIDE
 ## The End
