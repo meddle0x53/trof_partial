@@ -121,22 +121,22 @@
 ![Image-Absolute](assets/js.png)
 
 #HSLIDE
-* Netscape’s Mocha was the language of the browser
-* It had to have big friends, as it was against a big enemy - Microsoft |
-* So it became the companion language of Java and was renamed to JavaScript |
-* Also, did you know that Netscape wanted it on the server too - see LiveWire |
-
-#HSLIDE
 ### JavaScript
-* JavaScript had to be simple, with almost no verbose syntax, easy to be used by even non-developers
+* Netscape’s Mocha was the language of the browser
+* It had to be simple, with almost no verbose syntax, easy to be used by even non-developers |
 * So why not make it simple like Scheme, a dynamic, powerful, and functional in nature? |
 * And here we have a use of functional language, because they come with simplicity (and to think that people think of them as complex) |
 
 #HSLIDE
 ### JavaScript
 * Enter Brendan Eich the father of JavaScript
-* It has to be companion to Java as we said, but simpler, not so verbose and easier to grasp |
-* Because of pressure, what was meant to be a Scheme for the browser turned into something very different |
+* He wanted Mocha to be something like Scheme for the browser |
+* Also, did you know that Netscape wanted it on the server too - see LiveWire |
+
+#HSLIDE
+* Because of pressure, what was meant to be a Scheme for the browser turned into something very different
+* It had to have big friends, as it was against a big enemy - Microsoft |
+* So it became the companion language of Java and was renamed to JavaScript |
 
 #HSLIDE
 ### JavaScript
@@ -201,7 +201,7 @@ let Y = (h) => {
 
 * So when we have a desktop application, we react to events to refresh the state for the user |
 * That's cool, that worked for JavaScript |
-* But a program is written around its data... |
+* But every program is written around its data... |
 * So when the data changes, it'll be cool if the program reacts |
 
 #HSLIDE
@@ -429,7 +429,6 @@ class Monad m where
 
 #HSLIDE
 ### Try new things
-* If we all are the same, if we all are equal, if we all are static, we won't move forward |
 * Now, the functions are on the rise, but not only! |
 * So why not read about or try new things? |
 
