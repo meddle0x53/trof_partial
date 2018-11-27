@@ -47,7 +47,7 @@
 
 #HSLIDE
 ### In the past...
-* But why? |
+* But why?
 * This was 2004-2005? What was the state of the programming world then? |
 * Actually even before that time, in the 90s, the trends were simple and quite different |
 
@@ -370,6 +370,10 @@ in the same place at the same time.
 data Tree a = Leaf a | Node (Tree a) (Tree a)
 ```
 
+```ocaml
+type 'a llist = Nil | Cons of ('a * 'a llist)
+```
+
 #HSLIDE
 * Where do you think generics come from?
 
@@ -383,27 +387,6 @@ pub enum Option<T> {
 ```rust
 let x: Option<u32> = Some(2);
 ```
-
-#HSLIDE
-* And you can reason with simplicity like this:
-
-```ocaml
-type 'a llist = Nil | Cons of ('a * 'a llist)
-```
-
-#HSLIDE
-* Or do magic like this:
-
-```haskell
-class Monad m where
-  (>>=)  :: m a -> (a -> m b) -> m b
-  (>>)   :: m a -> m b        -> m b
-  return ::   a               -> m a
-  fail   :: String -> m a
-```
-
-#HSLIDE
-![Image-Absolute](assets/monadfunny.jpg)
 
 #HSLIDE
 ## Alternatives
